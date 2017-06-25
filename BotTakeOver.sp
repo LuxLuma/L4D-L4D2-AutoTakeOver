@@ -18,7 +18,7 @@ static Handle:hMaxSwitches = INVALID_HANDLE;
 public Plugin:myinfo =
 {
 	name = "[L4D/L4D2]BotTakeOver",
-	author = "Ludastar (Armonic)",
+	author = "Lux",
 	description = "AutoTakesOver a bot UponDeath/OnBotSpawn",
 	version = Plugin_Version,
 	url = "https://forums.alliedmods.net/showthread.php?p=2494319#post2494319"

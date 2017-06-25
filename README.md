@@ -1,1 +1,1 @@
-# [L4D/L4D2]BotTakeOver +5 Survivors
+https://forums.alliedmods.net/showthread.php?p=2494319

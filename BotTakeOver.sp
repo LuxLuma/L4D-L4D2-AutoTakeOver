@@ -37,7 +37,7 @@ public OnPluginStart()
 		SetFailState("This Is a Strage Error Either Cvar not found or the GameCheck Failed");
 	}
 	
-	CreateConVar("BotTakeOver", Plugin_Version, "Plugin_Version", FCVAR_DONTRECORD|FCVAR_NOTIFY|FCVAR_REPLICATED|FCVAR_SPONLY|FCVAR_PLUGIN);
+	CreateConVar("BotTakeOver", Plugin_Version, "Plugin_Version", FCVAR_DONTRECORD|FCVAR_NOTIFY|FCVAR_REPLICATED|FCVAR_SPONLY);
 	hCvar_EnableMe = CreateConVar( "TakeOverEnabled", "1", "[1/0 = ENABLED/DISABLED]", FCVAR_NOTIFY);
 	
 	HookEvent("player_death", ePlayerDeath);

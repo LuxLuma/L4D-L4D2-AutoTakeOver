@@ -217,25 +217,6 @@ public Action TakeOverBot(Handle hTimer, any iUserID)
 	return Plugin_Stop;
 }
 
-public void	InstaTakeControl(any iUserID)
-{
-	static int iClient;
-	iClient = GetClientOfUserId(iUserID);
-	if(iClient < 1 || !IsClientInGame(iClient) || GetClientTeam(iClient) != 2 || IsPlayerAlive(iClient))
-		return;
-	
-	static int iPotentialBot;
-	iPotentialBot = CheckAvailableSurvivorBot();
-	
-	if(iPotentialBot == -1)
-	{
-		PrintToChat(iClient, "%sNo Available Bots\n Awaiting Free Bot For \x04Hostle TakeOver", CHAT_TAGS);
-		return;
-	}
-	
-	TakeControl(iClient, iPotentialBot);
-}
-
 static int CheckAvailableSurvivorBot()
 {
 	static int i;
